@@ -1,0 +1,5 @@
+.vscode
+backend/env
+backend/app/__pycache__
+backend/app/alembic
+backend/app/data
