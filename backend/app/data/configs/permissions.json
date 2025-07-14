@@ -1,0 +1,20 @@
+{
+    "permissions" : [
+        "user.create", "user.list", "user.update", "user.delete",
+        "user.set_permission"
+    ],
+    "roles" : {
+        "admin" : [
+            "user.create", "user.list", "user.update", "user.delete",
+            "user.set_permission"
+        ],
+        "moderator" : [
+            "user.create", "user.list", "user.delete"
+        ],
+        "user" : []
+    },
+    "options" : {
+        "default_role" : "user",
+        "not_deletable_role" : ["admin", "moderator"]
+    }
+}
